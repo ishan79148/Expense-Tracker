@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Expense Tracker</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding: 30px;
+            background-color: #f4f4f9;
+        }
+
+        .tracker-box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 400px;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        input,
+        button {
+            padding: 8px;
+            margin: 5px;
+            font-size: 14px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            width: 80%;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #error-msg {
+            color: red;
+            font-size: 14px;
+            display: none;
+        }
+
+        #total-display {
+            color: #dc3545;
+            font-size: 24px;
+        }
+
+        #expense-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .expense-item {
+            background: #fff3f3;
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 4px;
+            border-left: 5px solid #dc3545;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tracker-box">
+        <h2>Expense Tracker</h2>
+        <h3 id="total-display">Total Spent: ₹0</h3>
+
+        <p id="error-msg">❌ Invalid amount. Please enter numbers only.</p>
+
+        <input type="text" id="item-name" placeholder="Enter the item name">
+        <input type="number" id="item-price" placeholder="Enter the item price">
+
+        <button id="add-btn">Add Expense</button>
+
+        <ul id="expense-list">
+        </ul>
+    </div>
+
+    <script src="new_script_2.js"></script>
+
+</body>
+
+</html>
